@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>JAVASCRIPT</li>
+
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langname){
+       const li= document.createElement('li')
+       li.innerHTML=`${langname}`
+       document.querySelector('.language').appendChild(li)
+
+    }
+    addLanguage("python")
+    addLanguage("c++")
+
+    function addoptilanguage(langname){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilanguage("java")
+
+    //edit
+
+    const secondlang=document.querySelector("li:nth-child(2)")
+    console.log(secondlang);
+    
+    // secondlang.innerHTML="MOJO"       WE CAN DO THIS BUT THIS IS NOT IN OPTIMIZED WAY
+
+    const newli=document.createElement('li')
+    newli.textContent="MOJO"
+    secondlang.replaceWith(newli)
+
+
+    const firstlang=document.querySelector(("li:first-child"))
+    console.log(firstlang);
+    const firstnewli=document.createElement('li')
+    firstnewli.textContent="RUST"
+    firstlang.replaceWith(firstnewli)
+
+    const lastlang=document.querySelector("li:last-child")
+    lastlang.remove()
+    
+</script>
+</html>
