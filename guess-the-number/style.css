@@ -1,0 +1,12 @@
+body{
+    background-color: #212121;
+    color: aliceblue;
+    text-align: center;
+}
+#guessfield{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: rgb(241, 17, 17) 2px solid;
+}
