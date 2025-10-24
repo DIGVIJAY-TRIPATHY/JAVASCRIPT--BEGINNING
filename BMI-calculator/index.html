@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>BMI CALCULATOR</h1>
+    <h1 id="head">BMI CALCULATOR</h1>
     <div class="container">
+        <div id="weight-guide">
+            <h3>BMI WEIGHT GUIDE</h3>
+            <p>under weight= less than 18.6</p>
+            <p>normal weight= between 18.6 and 24.9</p>
+            <p>overweight= greater than 24.9</p>
+        </div>
         <form action="">
             <p><label for="">height in cm : </label><input type="text" id="height" placeholder="enter your height"></p>
             <p><label for="">weight in kg : </label><input type="text" id="weight" placeholder="enter your weight"></p>
             <button>CALCULATE</button>
             <div id="result"></div>
-            <div id="weight-guide">
-                <h3>BMI WEIGHT GUIDE</h3>
-                <p>under weight= less than 18.6</p>
-                <p>normal weight= between 18.6 and 24.9</p>
-                <p>overweight= greater than 24.9</p>
-            </div>
+            <div id="observe"></div>
 
         </form>
         
